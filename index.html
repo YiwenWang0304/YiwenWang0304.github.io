@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <title>EDBT/ICDT 2020 Joint Conference - 30th March-2nd April, 2020 - Copenhagen, Denmark</title>
+  <!-- add your meta tags here -->
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css' />
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css' />
+  <link href="css/layout.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 7]>
+<link href="/css/patch.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<style type="text/css">
+  .slideshow { height: 400px; width: 750px; margin: auto }
+  .slideshow img { padding: 15px; border: 1px solid #ccc; background-color: #eee; }
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+
+<script>
+    function getUrlParameter() {
+        var query = window.location.search.substring(1);
+        var vars = query.split("=");
+        if (vars.length > 1) {
+            for (var i = 0; i < vars.length; i++) {
+                return vars[1];
+            }
+        }
+        return "main.html";
+       
+    }
+</script>
+
+</head>
+<body>
+  <div class="page_margins schatten">
+    <div id="border-top">
+      <div id="edge-tl"></div>
+      <div id="edge-tr"></div>
+    </div>
+    <div class="page">
+      <div id="header">
+        <div class="subcolumns">
+          <table style="width: 100%;background-color: transparent;border-collapse: collapse;border-spacing: 0;border:0;">
+            <tbody>
+              <tr>
+                <td>
+                  <a href="/">
+                    <img style="max-width: 250px;" src="images/logos/EDBT-ICDT-copenhagen.png" title="EDBT/ICDT Logo" alt="EDBT/ICDT Logo" />
+                  </a>
+                </td>
+                <td style="text-align: center">
+                  <h1 style="display:inline; color: rgb(204, 0, 0); font-size:30px " >EDBT/ICDT 2020 Joint Conference</h1>
+                   <p>
+                   <h2>30th March-2nd April, 2020 </h2>
+                  <h2> Copenhagen, Denmark</h2><br/>
+                </td>
+                <td>
+                  <!--<a target="_blank" href="http://inesc-id.pt/"><img src="images/logos/inescid-218x118.jpg" style="display:block;width: 140px"></a>-->
+                  <a target="_blank" href="https://tecnico.ulisboa.pt/en/"><img src="images/logos/dms-logo.png" style="display:block;width: 140px"></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+         </div>
+         <div class="c25r">
+          <div class="subcr">
+            <!-- -->                
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main">
+      <div id="col1">
+        <div id="col1_content" class="clearfix">
+            <script>
+                $(function(){$("#col1_content").load("contents/menu.html");});
+            </script>
+        </div>
+      </div>
+      <div id="col3">
+          <div id="col3_content" class="clearfix">
+            <script>
+                // var webcontent = "contents/main.html";
+                var webcontent = "contents/".concat(getUrlParameter());
+
+                $(function(){$("#col3_content").load(webcontent);});
+            </script>
+          </div>
+        <!-- IE Column Clearing -->
+        <div id="ie_clearing"> &#160; </div>
+      </div>
+    </div>
+
+    <!-- begin: #footer -->
+    <div id="border-bottom">
+      <div id="edge-bl"></div>
+      <div id="edge-br"></div>
+    </div>
+  </div>
+</body>
+
+</html>

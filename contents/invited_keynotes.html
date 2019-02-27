@@ -1,0 +1,52 @@
+<h2 style="font-weight: bold; color: rgb(204, 0, 0);">Invited Keynotes</h2>
+
+<p>We are very pleased to announce the EDBT/ICDT 2019 invited keynote speakers. </p>
+
+<!-- <br/><a name="Olteanu"><h3><b>TBA</b> (by Dan Olteanu)</h3></a>
+<p>
+	<b>Abstract</b>: soon...
+</p> -->
+<br/><h3><b>Learning Models over Relational Databases</b><br>by Dan Olteanu</h3>
+<p>
+	<b>Abstract</b>: In this talk, I will make the case for a first-principles approach to machine learning over relational databases that exploits recent development in database systems and theory.
+	The input to learning classification and regression models is defined by feature extraction queries over relational databases. The mainstream approach to learning over relational data is to materialize the training dataset, export it out of the database, and then learn over it using statistical software packages. These three steps are expensive and unnecessary. Instead, one can cast the machine learning problem as a database problem by decomposing the learning task into a batch of aggregates over the feature extraction query and by computing this batch over the input database.
+	Ongoing results show that the performance of this approach benefits tremendously from structural properties of the relational data and of the feature extraction query; such properties may be algebraic (semi-ring), combinatorial (hypertree width), or statistical (sampling). It also benefits from factorized query evaluation and query compilation. For a variety of models, including factorization machines, decision trees, and support vector machines, this approach may come with lower computational complexity than the materialization of the training dataset used by the 
+	mainstream approach. This translates to several orders-of-magnitude speed-up over state-of-the-art systems such as TensorFlow, R, Scikit-learn, and mlpack. While these results are promising, there is much more awaiting to be discovered.<br>
+	This work is part of the <a href="https://fdbresearch.github.io/" target="_blank">FDB</a> project and based on
+	collaboration with Maximilian Schleich (Oxford), Mahmoud Abo-Khamis, Ryan Curtin, Hung Q. Ngo (RelationalAI), Ben Moseley (CMU), and XuanLong Nguyen (Michigan).
+</p>
+<p>
+	<img src="./images/photos/Dan2.jpg" alt="Dan Olteanu" align="left" style="border: 0px solid ; margin: 0px; padding-right: 10px; width: 200px; "/>
+	<i><b>Dan Olteanu</b> is Professor of Computer Science at the University of Oxford and Computer Scientist at RelationalAI. He received his PhD from the University of Munich in 2005. He spends his time understanding hard computational challenges and designing simple and scalable solutions towards these challenges. He has published over 70 papers in the areas of database systems, AI, and theoretical computer science, contributing to XML query processing, incomplete information and probabilistic databases, factorised databases, scalable and incremental in-database optimisation, and the commercial systems LogicBlox and RelationalAI. He co-authored the book « Probabilistic Databases » (2011). He has served as associate editor for PVLDB and IEEE TKDE, as track chair for IEEE ICDE’15, group leader for ACM SIGMOD’15, vice chair for ACM SIGMOD’17, and co-chair for AMW’18, and he is currently serving as associate editor for ACM TODS. He is the recipient of an ERC Consolidator grant (2016) and an Oxford Outstanding Teaching award (2009).</i> 
+</p>
+
+<br/><h3><b>Journalistic Dataspaces: Data Management for Journalism and Fact-Checking</b> <br>by Ioana Manolescu</h3>
+<p>
+	<b>Abstract</b>: Modern societies crucially rely on the availability of free media. While any citizen has today access to the necessary tools to publish content and debate, the best standards for reliable, verified reporting and for well-structured debates are still held by professional journalists.  Historically confined to newsrooms and performed before publication, verification of claims (aka fact-checking) has now become a very visible part of journalists' activity; the importance of some topics under discussion (e.g., large-scale pollution or the national economy) has also attracted fact-checkers outside the journalism industry, such as scientists, NGOs etc. In this talk, I will outline a vision of Journalistic Dataspaces, as an environment and set of tools that should support journalists and/or fact-checkers by means of digital content management. This draws upon the recent years of collaboration with journalists from French media, notably Le Monde's fact-checking team "Les Décodeurs" and Ouest France, a large regional newspaper, as well as many academic colleagues. I will highlight the common needs of fact-checking and modern ("data") journalism, show how existing tools from the database, information retrieval, knowledge representation and natural language processing can help realize this vision. I will also discuss the main technical and organizational challenges toward realizing this vision. Most of this work is part of the <a href="http://contentcheck.inria.fr/" target="_blank">ANR ContentCheck project</a>.
+</p>
+
+<p>
+	<img src="./images/photos/ioana.jpg" alt="Ioana Manolescu" align="left" style="border: 0px solid ; margin: 0px; padding-right: 10px; width: 200px; "/>
+	<i><b>Ioana Manolescu</b> is the lead of the CEDAR team, joint between Inria Saclay and the LIX lab (UMR 7161) of Ecole polytechnique, in France. The CEDAR team  research focuses on rich data analytics at cloud scale. She is a member of the PVLDB Endowment Board of Trustees, and a co-president of the ACM SIGMOD Jim Gray PhD dissertation committee. Recently, she has been a general chair of the IEEE ICDE 2018 conference, an associate editor for PVLDB 2017 and 2018, and the program chair of SSDBBM 2016. She has co-authored more than 130 articles in international journals and conferences, and contributed to several books.  Her main research interests include data models and algorithms for computational fact-checking, performance optimizations for semistructured data and the Semantic Web, and distributed architectures for complex large data.</i> 
+</p>
+
+<br/><h3><b>The Power of Relational Learning</b> <br>by Lise Getoor</h3>
+<p>
+	<b>Abstract</b>: We live in a richly interconnected world and, not surprisingly, we generate richly interconnected data.   From smart cities to social media to financial networks to biological networks, data is relational.   While database theory is built on strong relational foundations, the same is not true for machine learning.   The majority of machine learning methods flatten data into a single table before performing any processing.   Further, database theory is also built on a bedrock of declarative representations.   The same is not true for machine learning, in particular deep learning, which results in black-box, uninterpretable and unexplainable models.   In this talk, I will introduce the field of statistical relational learning, an alternative machine learning  approach based on declarative relational representations paired with probabilistic models.   I’ll describe our work on probabilistic soft logic, a probabilistic programming language that is ideally suited to richly connected, noisy data.  Our recent results show that by building on state-of-the-art optimization methods in a distributed implementation, we can solve very large relational learning problems orders of magnitude faster than existing approaches.
+</p>
+<p>
+	<img src="./images/photos/lise.jpg" alt="Lise Getoor" align="left" style="border: 0px solid ; margin: 0px; padding-right: 10px; width: 120px; "/>
+	<i><b>Lise Getoor</b> is a professor in the Computer Science Department at the University of California, Santa Cruz and director of the UCSC D3 Data Science Research Center.  Her research areas include machine learning, data integration and reasoning under uncertainty. She has over 250 publications and extensive experience with machine learning and probabilistic modeling methods for graph and network data. She is a Fellow of the Association for Artificial Intelligence, and has served as an elected board member of the International Machine Learning Society, served on the board of the Computing Research Association (CRA), and was co-chair for ICML 2011.  She is a recipient of an NSF Career Award and twelve best paper and best student paper awards.  She received her PhD from Stanford University in 2001, her MS from UC Berkeley, and her BS from UC Santa Barbara, and was a professor in the Computer Science Department at the University of Maryland, College Park from 2001-2013.</i> 
+</p>
+
+<br/><h3><b>Database Systems 2.0</b> by Johannes Gehrke</h3>
+<p>
+	<b>Abstract</b>: The cloud is heralded for multi-tenancy and elasticity for database systems. But the cloud also has another super-power: By running database systems in the cloud, we can learn how they are being used and how we can improve them, making them faster, cheaper, more adaptive, and overall more useful for our customers. I will describe initial thinking and open research question for this next generation of cloud-native database systems, Database Systems 2.0.
+</p>
+
+<p>
+	<img src="./images/photos/johannes2.jpg" alt="Ioana Manolescu" align="left" style="border: 0px solid ; margin: 0px; padding-right: 10px; width: 120px; "/>
+	<i><b>Johannes Gehrke</b> is a Technical Fellow at Microsoft in the Experiences and Devices Group, working on machine learning and Big Data. From 1999 to 2015, he was on the faculty in the Department of Computer Science at Cornell University where he graduated 25 PhD students. Johannes has received an NSF Career Award, a Sloan Research Fellowship, a Humboldt Research Award, the 2011 IEEE Computer Society Technical Achievement Award, and he is an ACM Fellow. He co-authored the undergraduate textbook "Database Management Systems (McGrawHill (2002)," currently in its third edition), and he was Program co-Chair of ACM KDD 2004, VLDB 2007, IEEE ICDE 2012, ACM SOCC 2014, and IEEE ICDE 2015.</i> 
+</p>
+<br>
+<br>
